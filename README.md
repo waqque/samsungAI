@@ -52,10 +52,10 @@
 **Метрики качества**:
 | Метрика   | Формула                                                                                                                       | Описание                             |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| Accuracy  | tp+tntp+tn+fp+fn\\frac{tp+tn}{tp+tn+fp+fn}tp+tn+fp+fntp+tn                                                                    | Доля правильных предсказаний         |
-| Precision | tptp+fp\\frac{tp}{tp+fp}tp+fptp                                                                                               | Точность положительного класса       |
-| Recall    | tptp+fn\\frac{tp}{tp+fn}tp+fntp                                                                                               | Полнота (выявление всех релевантных) |
-| F1-score  | 2⋅precision⋅recallprecision+recall2 \\cdot \\frac{precision \\cdot recall}{precision + recall}2⋅precision+recallprecision⋅recall | Гармоническое среднее                |
+| Accuracy  | tp+tn/tp+tn+fp+fn                                                                    | Доля правильных предсказаний         |
+| Precision | tp/tp+fp                                                                                               | Точность положительного класса       |
+| Recall    | tp/tp+fn                                                                                               | Полнота (выявление всех релевантных) |
+| F1-score  | 2*(recall*precision)(/recall+precision) | Гармоническое среднее                |
 
 ## 2.6 Метрики качества. kNN. kMeans
 
